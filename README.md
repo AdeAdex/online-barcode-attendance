@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Online Barcode Attendance
 
-## Getting Started
+## Overview
 
-First, run the development server:
+The Online Barcode Attendance application simplifies student management and attendance tracking using QR codes. It provides separate portals for administrators and lecturers, each with specific functionalities tailored to their roles. Administrators can manage student data, while lecturers can track attendance by scanning student QR codes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Admin Dashboard:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  - Add, edit, and remove lecturers.
+  - Manage courses and academic details.
+  - View attendance reports.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Lecturer Dashboard:**
 
-## Learn More
+  - Access student lists and details.
+  - Track attendance using QR code scanning.
+  - Generate attendance reports for classes.
 
-To learn more about Next.js, take a look at the following resources:
+- **Student Management:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - Add new students with personal and academic details.
+  - Assign students to courses.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **QR Code Integration:**
+  - Automatically generate unique QR codes for each student.
+  - QR codes link directly to student profiles for quick attendance tracking.
 
-## Deploy on Vercel
+## Technology Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend:** React with Next.js for server-side rendering, styled with Tailwind CSS for responsive design.
+- **State Management:** Local storage for client-side data persistence.
+- **QR Code Generation:** Utilizes `uuidv4` for unique identifiers and `https://api.qrserver.com` for QR code generation.
+- **Modals and UI Components:** React Modal for interactive modals and custom UI components for enhanced user experience.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Installation and Usage
+
+1. **Clone Repository:** `git clone https://github.com/AdeAdex/online-barcode-attendance.git`
+2. **Install Dependencies:** `npm install`
+3. **Run Development Server:** `npm run dev`
+4. **Access Application:** Open `localhost:3000` in your web browser.
+
+## Contributing
+
+Contributions are welcome! Fork the repository, make your changes, and submit a pull request with a clear description of your additions.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Thanks to Open Source libraries and contributors for making development faster and more efficient.
