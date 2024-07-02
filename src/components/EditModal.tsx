@@ -1,7 +1,6 @@
-
 // // components/EditModal.tsx
 
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import Modal from "react-modal";
@@ -47,8 +46,13 @@ const EditModal: React.FC<EditModalProps> = ({
   };
 
   return (
-    <Modal className="pt-[80px] bg-white min-h-screen" isOpen={isOpen} onRequestClose={onRequestClose} ariaHideApp={false}>
-       <div className="p-6 w-full md:w-[50%] md:mx-auto rounded-lg border shadow">
+    <Modal
+      className="pt-[80px] bg-white min-h-screen"
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      ariaHideApp={false}
+    >
+      <div className="p-6 w-full md:w-[50%] md:mx-auto rounded-lg border shadow">
         <h2 className="text-xl font-bold mb-4">Edit Student</h2>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         <form onSubmit={handleSave}>

@@ -36,11 +36,13 @@ const NavBar: React.FC = () => {
     router.push("/");
   };
 
-
   return (
     <nav className="fixed left-0 top-0 w-full z-50 bg-gray-800 p-4 text-white">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex space-x-4 items-center cursor-pointer" onClick={handleLogoClick}>
+        <div
+          className="flex space-x-4 items-center cursor-pointer"
+          onClick={handleLogoClick}
+        >
           <Image
             src={logo}
             alt="Logo"
@@ -48,7 +50,9 @@ const NavBar: React.FC = () => {
             height={32}
             className="w-9 h-9"
           />
-          <div className="text-[12px] md:text-lg font-bold">Online Class Attendance</div>
+          <div className="text-[12px] md:text-lg font-bold">
+            Online Class Attendance
+          </div>
         </div>
         {isLoggedIn ? (
           <div className="relative">
@@ -77,7 +81,9 @@ const NavBar: React.FC = () => {
             )}
           </div>
         ) : (
-          <Link href="/welcome" className="py-2 px-6 bg-blue-500 rounded-md">Login</Link>
+          <Link href="/welcome" className="py-2 px-6 bg-blue-500 rounded-md">
+            Login
+          </Link>
         )}
       </div>
     </nav>
