@@ -128,7 +128,7 @@ const AdminDashboardPage: React.FC = () => {
                   </option>
                 ))}
             </select>
-            <div className="flex w-full md:w-[unset] justify-between md:space-x-7 mt-3 md:mt-[unset] md:my-auto bg-yellow-400 ">
+            <div className="flex w-full md:w-[unset] justify-between md:space-x-7 mt-3 md:mt-[unset] md:my-auto bg-yellow-400 h-full ">
             <button
               onClick={() => setIsStudentModalOpen(true)}
               className="bg-blue-500 text-white px-2 sm:px-4 py-1 rounded hover:bg-blue-700 transition duration-200 my-auto"
