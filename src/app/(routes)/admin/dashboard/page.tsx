@@ -111,7 +111,7 @@ const AdminDashboardPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-4 mt-[80px]">
       <div className="max-w-7xl mx-auto bg-white p-4 sm:p-8 rounded-lg shadow-md">
-        <div className="flex flex-col md:flex-row justify-between mb-4 sm:mb-6 bg-red-500 ">
+        <div className="flex flex-col md:flex-row justify-between mb-4 sm:mb-6 ">
           <h1 className="text-xl sm:text-2xl font-bold my-auto">Admin Dashboard</h1>
           <div className="flex flex-col md:flex-row justify-between mt-3 md:mt-0 w-full md:w-[55%] my-auto">
             <select
